@@ -1,21 +1,45 @@
 body {
-    background-image: url('bg.jpg'); 
+    /* 背景图片设置 */
+    background-image: url('bg.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
-intro-title {
-    text-align: center; 
-    margin-top: 60px;
-    font-size: 60px; 
-    color: #666666;
-    font-weight: bold; 
+
+.intro-title {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 120px;   /* 超大标题 */
+    color: #000000;    /* 黑色，如果看不清可以改 white */
+    font-weight: bold;
 }
+
 .sub-title {
-    text-align: center;    
-    font-size: 100px;       
-    color: #333333;        
-    margin-top: 20px;      
-    font-weight: normal;  
+    text-align: center;
+    font-size: 40px;
+    color: #333333;
+    margin-top: 20px;
+}
+
+.game-button {
+    display: block;
+    width: 250px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ff4757; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.game-button:hover {
+    background-color: #ff6b81;
+    transform: scale(1.1); 
 }
