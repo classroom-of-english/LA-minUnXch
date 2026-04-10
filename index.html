@@ -14,11 +14,21 @@
     <!-- 游戏按钮 -->
     <a href="game.html" class="game-button">Eaglercraft</a>
 
-    <!-- 隐藏的播放器：修正了链接格式 --> 
-   <iframe width="0" height="0" 
-    src="https://youtube.com" 
-    frameborder="0" 
-    allow="autoplay">-ERFwSSqg1Y
-</iframe>
+    <!-- 修正后的隐藏播放器 -->
+    <iframe width="0" height="0" 
+        src="https://youtube.com" 
+        id="bgm"
+        frameborder="0" 
+        allow="autoplay">
+    </iframe>
+
+    <script>
+        // 当你点击网页任何地方，音乐就会变成有声并循环播放
+        document.body.addEventListener('click', function() {
+            var iframe = document.getElementById('bgm');
+            iframe.src = "https://youtube.com";
+        }, { once: true });
+    </script>
+
 </body>
 </html>
